@@ -1,0 +1,23 @@
+html, body {
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 100vh; /* Ensure body takes full viewport height */
+    width: 100vw; /* Ensure body takes full viewport width */
+}
+
+canvas {
+    background-color: #555;
+    border: 2px solid #fff;
+    height: 100vh; /* Prioritize filling viewport height */
+    width: auto; /* Let width adjust to maintain aspect ratio */
+    object-fit: contain; /* Maintain aspect ratio */
+}
